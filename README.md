@@ -36,3 +36,17 @@ Thanks for taking the time to complete this exercise!
 <3, Vimeo
 
 # vimeo-challenge
+## Usage
+```shell
+❯ /Users/alvaro/.conda/envs/vimeo-challenge/bin/python
+Python 3.8.5 (default, Sep  4 2020, 02:22:02) 
+[Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from vimeo_challenge import get_500s_by_domain
+>>> get_500s_by_domain('5-5-2017 7:25:01.638', '5-5-2017 7:25:01.655',
+...                    ['log_sample.txt', 'log_sample_2.txt', 'does_not_exist.txt'])
+[Errno 2] No such file or directory: 'does_not_exist.txt'
+Between time 5-5-2017 7:25:01.638 and time 5-5-2017 7:25:01.655:
+ player.vimeo.com  returned 35.0% 5xx errors
+ vimeo.com  returned 16.67% 5xx errors
+```

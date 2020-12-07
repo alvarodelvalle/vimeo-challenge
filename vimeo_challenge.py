@@ -63,7 +63,3 @@ def aggregate_files(files: list):
             else:
                 raise e
     return out.name
-
-
-get_500s_by_domain('5-5-2017 7:25:01.638', '5-5-2017 7:25:01.655',
-                   ['log_sample.txt', 'log_sample_2.txt', 'does_not_exist.txt'])
